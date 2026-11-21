@@ -25,7 +25,9 @@ def Power(base, exponent):
     return result
 
 
-def calculate(operation, a, b, history=[]):
+def calculate(operation, a, b, history=None):
+    if history is None:
+        history = []
     if operation == "add":
         result = add(a, b)
     elif operation == "subtract":
