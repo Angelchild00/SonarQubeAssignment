@@ -19,5 +19,8 @@ pytest --cov=src --cov-report=term
 Run the interactive calculator:
 
 ```bash
-python src/calculator/cli.py
+# from the repo root
+# PowerShell:  $env:PYTHONPATH="src"
+# bash:        export PYTHONPATH=src
+python -m calculator.cli
 ```
